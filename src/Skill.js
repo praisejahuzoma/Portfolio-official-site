@@ -1,3 +1,4 @@
+import "./Skill-script.js"
 export default function Skill() {
     return (
         // Skills Section
