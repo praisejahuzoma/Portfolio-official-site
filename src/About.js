@@ -12,7 +12,7 @@ export default function About(){
 
            <div class="about_data">
              <p class="about_description">
-                My skill set is diverse, ranging from knowledge of Python and React programming through HTML, CSS, and Javascript. 
+                My skill set is diverse, ranging from knowledge of React programming through HTML, CSS, and Javascript. 
                 My main goal is to help other people create websites utilizing the best technologies available.</p>
                 {/* High level experience in web design and development knowledg, producing quality work.  */}
 
