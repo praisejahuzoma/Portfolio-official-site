@@ -1,6 +1,7 @@
 export default function Navbar(){
     return(
-<div>
+        // Navbar
+ <div>
   <header className="header" id="header">
         <nav class="nav container">
             <a href="#" className="nav_logo">PJ</a>
