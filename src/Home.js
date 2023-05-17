@@ -23,7 +23,7 @@ export default function HomePage(){
               <img src="/image/Home_img.png" alt="Home image"/>
              </div>
              <div class="home_data">
-                  <h1 className="home_title">Hi, <br/>I'm Praisejah</h1>
+                  <h1 className="home_title fade-in">Hi, <br/>I'm Praisejah</h1>
                   <h3 className="home_subtitle">Web Developer</h3>
                   <p className="home_description">Who focuses on writing clean, elegant and efficient code.</p>
                   <a href="#contact" className="button button--flex">
