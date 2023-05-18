@@ -79,7 +79,7 @@ img{
    --hearder-height: 3rem;
 
    /* change favoirte color */
-   --hue-color: 870;
+   --hue-color:49;
 
    /* hsl color mode */
    --first-color: hsl(var(--hue-color), 69%, 61%);
@@ -547,6 +547,77 @@ color: var(--first-color);
 }
 
 
+/* qualification */
+.qualification_tabs{
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: var(--mb-2);
+}
+
+.qualification_button{
+  font-size: var(--h3-font-size);
+  font-weight: var(--font-medium);
+  cursor: pointer;
+}
+
+.qualification_button:hover{
+  color: var(--first-color);
+}
+
+.qualification_icon{
+  font-size: 1.8rem;
+  margin-right:var(--mb-0-25) ;
+}
+
+.qualification_data{
+  display: grid;
+  grid-template-columns:  1fr max-content 1fr;
+  column-gap: 1.5rem;
+}
+
+.qualification_title{
+  font-size: var(--normal-font-size);
+  font-weight: var(--font-medium);
+}
+
+.qualification_subtitle{
+  display:inline-block;
+  font-size: var(--small-font-size);
+  margin-bottom: var(--mb-1);
+}
+
+.qualification_calendar{
+  font-size: var(--smaller-font-size);
+  color: var(--text-color-light);
+}
+
+.qualification_rounder{
+  display: inline-block;
+  width: 13px;
+  height: 13px;
+  background-color: var(--first-color);
+  border-radius: 50%;
+}
+
+.qualification_line{
+  display: block;
+  width: 1px;
+  height: 100%;
+  background-color: var(--first-color);
+  transform: translate(6px, -7px);
+}
+.qualification [data-content]{
+  display: none;
+}
+
+.qualification_active[data-content]{
+  display: block;
+}
+
+/* .qualification_button.qualification_active{
+  color: var(--first-color);
+} */
+
 
  /* media queries */
     /* for small screen */
@@ -569,6 +640,9 @@ color: var(--first-color);
      }
      .skills_title{
        font-size: var(--normal-font-size);
+     }
+     .qualification_data{
+      gap: .5rem;
      }
   }
 
@@ -695,6 +769,16 @@ body{
   justify-content: initial;
 }
 
+.qualification_tabs{
+  justify-content: center;
+}
+.qualification_button{
+  margin:  0 var(--mb-1);
+}
+.qualification_section{
+  grid-template-columns: .5fr;
+}
+
 }
 
 
@@ -763,8 +847,12 @@ body{
   }
 
   .skills{
-    margin-top: -12.5rem;
+    margin-top: -12rem;
     padding: 13rem;
+  }
+  .qualification {
+    margin-top: -20rem;
+    padding: 20rem;
   }
     }
 

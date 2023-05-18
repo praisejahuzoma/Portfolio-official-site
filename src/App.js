@@ -3,6 +3,7 @@ import Navbar from "./Nav"
 import HomePage from "./Home"
 import About from "./About"
 import Skill from "./Skill"
+import Qulifications from './Qualification';
 function App() {
   return (
     <div className="App">
@@ -10,6 +11,7 @@ function App() {
       <HomePage/>
       <About/>
       <Skill/>
+      <Qulifications/>
     </div>
   )
 }
