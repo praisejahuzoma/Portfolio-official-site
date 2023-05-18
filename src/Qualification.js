@@ -71,11 +71,11 @@ export default function Qualifications() {
               </div>
 
               <div>
-                <h3 className="qualification_title">Javasript / React</h3>
+                <h3 className="qualification_title">Javasript</h3>
                 <span className="qualification_subtitle">Javascript-info / Udacity</span>
                 <div className="qualification_calender">
                   <i className="bx bx-calendar"></i>
-                  2021
+                  2020-2022
                 </div>
               </div>
             </div>
@@ -98,18 +98,20 @@ export default function Qualifications() {
 
             {/* qualification 3 */}
             <div className="qualification_data">
-              <div>
-                <h3 className="qualification_title">Figma</h3>
-                <span className="qualification_subtitle">Ingressive For Good</span>
-                <div className="qualification_calender">
-                  <i className="bx bx-calendar"></i>
-                  2021
-                </div>
-              </div>
+              <div></div>
 
               <div>
                 <span className="qualification_rounder"></span>
                 <span className="qualification_line"></span>
+              </div>
+
+              <div>
+                <h3 className="qualification_title"> React</h3>
+                <span className="qualification_subtitle">Scrimba / Udacity</span>
+                <div className="qualification_calender">
+                  <i className="bx bx-calendar"></i>
+                  2021-2022
+                </div>
               </div>
             </div>
           </div>

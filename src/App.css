@@ -525,11 +525,11 @@ color: var(--first-color);
 }
 
 .skills_figma{
-  width: 10%;
+  width: 50%;
 }
 
 .skills_photoshop{
-  width: 0.5%;
+  width: 35%;
 }
 
 .skills_close .skills_list{

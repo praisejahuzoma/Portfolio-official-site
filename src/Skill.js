@@ -43,7 +43,7 @@ export default function Skill() {
 
               <div>
                 <h1 className="skills_title">Frontend developer</h1>
-                <span className="skills_subtitle">More than 1 year</span>
+                <span className="skills_subtitle"> 3 years</span>
               </div>
 
               <i className="bx bx-chevron-down  skills_arrow"></i>
@@ -98,8 +98,8 @@ export default function Skill() {
               <i className="bx bx-book-content skills_icon"></i>
 
               <div>
-                <h1 className="skills_titles">Designer</h1>
-                <span className="skills_subtitle">1 year</span>
+                <h1 className="skills_title">Designer</h1>
+                <span className="skills_subtitle">2 years</span>
               </div>
 
               <i className="bx bx-chevron-down  skills_arrow"></i>
@@ -109,7 +109,7 @@ export default function Skill() {
               <div className="skills_data">
                 <div className="skills_titles">
                   <h3 className="skills_name">Figma</h3>
-                  <span className="skills_number">10%</span>
+                  <span className="skills_number">50%</span>
                 </div>
                 <div className="skills_bar">
                   <span className="skills_percentage skills_figma"></span>
@@ -119,7 +119,7 @@ export default function Skill() {
               <div className="skills_data">
                 <div className="skills_titles">
                   <h3 className="skills_name">Photoshop</h3>
-                  <span className="skills_number">5%</span>
+                  <span className="skills_number">35%</span>
                 </div>
                 <div className="skills_bar">
                   <span className="skills_percentage skills_photoshop"></span>
