@@ -618,6 +618,92 @@ color: var(--first-color);
   color: var(--first-color);
 } */
 
+/* portfolio */
+.portfolio_container{
+  overflow: initial;
+}
+
+.portfolio_content{
+  padding: 0 1.5rem;
+}
+
+.portfolio_img{
+  width: 3805px;
+  border-radius: .5rem;
+  justify-self: center;
+}
+
+.portfolio_title{
+  font-size: var(--h3-font-size);
+  margin-bottom: var(--mb-0-5);
+}
+
+.portfolio_description{
+  margin-bottom: var(--mb-0-75);
+}
+
+.portfolio_button:hover .button-icon{
+  transform: translateX(.25rem);
+}
+
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+
+
+
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 7px;
+  width: 7px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+  margin-bottom: -2.5rem;
+}
+
+
+.dots {
+  cursor: pointer;
+  height: 7px;
+  width: 7px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #9e8fbb;
+}
+
+/* Fading animation */
+
+
+@-webkit-keyframes fade {
+  from {opacity: .7} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .7} 
+  to {opacity: 1}
+}
+
+
+  /* On smaller screens, decrease text size */
+  @media only screen and (max-width: 300px) {
+    .prev, .next,.text {font-size: 11px}
+  }
 
  /* media queries */
     /* for small screen */
@@ -693,7 +779,20 @@ color: var(--first-color);
 body{
     margin: 0;
 }
-
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 10%;
+  width: auto;
+  padding: 110px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none; 
+}
 .section{
   padding:  12rem 0 2rem;
 }
@@ -778,6 +877,17 @@ body{
 .qualification_section{
   grid-template-columns: .5fr;
 }
+.portfolio_img{
+  width: 450px;
+  margin-left: 135px;
+}
+.portfolio_data{
+   margin-left: 120px;
+   width: 500px;
+}
+.portfolio_content{
+  align-items: center;
+}
 
 }
 
@@ -809,7 +919,7 @@ body{
           column-gap: 5rem;
       }
       .portfolio_img{
-         width: 450px;
+         width: 650px;
          margin-left: 135px;
       }
       .portfolio_data{
@@ -853,6 +963,10 @@ body{
   .qualification {
     margin-top: -20rem;
     padding: 20rem;
+  }
+  .portfolio{
+    margin-top: -17rem;
+  padding: 5rem;
   }
     }
 
