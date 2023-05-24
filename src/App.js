@@ -4,7 +4,7 @@ import HomePage from "./Home"
 import About from "./About"
 import Skill from "./Skill"
 import Qulifications from './Qualification'
-import Portfolio from './Portfolio';
+// import Portfolio from './Portfolio';
 function App() {
   return (
     <div className="App">
@@ -13,7 +13,7 @@ function App() {
       <About/>
       <Skill/>
       <Qulifications/>
-      <Portfolio/>
+      {/* <Portfolio/> */}
     </div>
   )
 }
