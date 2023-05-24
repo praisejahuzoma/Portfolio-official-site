@@ -653,10 +653,6 @@ color: var(--first-color);
   border-radius: 3px 0 0 3px;
 }
 
-
-
-
-
 /* The dots/bullets/indicators */
 .dot {
   cursor: pointer;
@@ -699,11 +695,39 @@ color: var(--first-color);
   to {opacity: 1}
 }
 
+/* Position the previous and next buttons */
+.prev,
+.next {
+  position: absolute;
+  top: 40%;
+  transform: translateY(-50%);
+  width: auto;
+  padding: 16px;
+  color: black;
+  font-weight: bold;
+  font-size: 24px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  cursor: pointer;
 
-  /* On smaller screens, decrease text size */
-  @media only screen and (max-width: 300px) {
-    .prev, .next,.text {font-size: 11px}
-  }
+}
+
+/* Position the previous button on the left */
+.prev {
+  left: 0;
+}
+
+/* Position the next button on the right */
+.next {
+  right: 0;
+}
+
+/* Position the container relative to the demo images */
+.portfolio_container {
+  position: relative;
+}
+
 
  /* media queries */
     /* for small screen */
@@ -779,20 +803,7 @@ color: var(--first-color);
 body{
     margin: 0;
 }
-.prev, .next {
-  cursor: pointer;
-  position: absolute;
-  top: 10%;
-  width: auto;
-  padding: 110px;
-  margin-top: -22px;
-  color: white;
-  font-weight: bold;
-  font-size: 18px;
-  transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
-  user-select: none; 
-}
+
 .section{
   padding:  12rem 0 2rem;
 }
@@ -936,25 +947,9 @@ body{
       .contact_input{
           grid-template-columns: repeat(2,1fr);
       }
-      .testimonial_content{
-          width: 480px;
-          margin-left: 150px;
-      }
+      
   
-   .prev, .next {
-    cursor: pointer;
-    position: absolute;
-    top: 10%;
-    width: auto;
-    padding: 110px;
-    margin-top: -22px;
-    color: white;
-    font-weight: bold;
-    font-size: 18px;
-    transition: 0.6s ease;
-    border-radius: 0 3px 3px 0;
-    user-select: none; 
-  }
+   
 
   .skills{
     margin-top: -12rem;
