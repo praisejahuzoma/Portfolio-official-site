@@ -4,6 +4,7 @@ import HomePage from "./Home"
 import About from "./About"
 import Skill from "./Skill"
 import Qulifications from './Qualification'
+import Services from './Service';
 // import Portfolio from './Portfolio';
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
       <About/>
       <Skill/>
       <Qulifications/>
+      <Services/>
       {/* <Portfolio/> */}
     </div>
   )
