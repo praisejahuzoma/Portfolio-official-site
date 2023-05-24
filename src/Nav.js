@@ -23,6 +23,17 @@ export default function Navbar() {
     if (navClose) {
       navClose.addEventListener('click', closeMenu);
     }
+    
+    /*==================== REMOVE MENU MOBILE ====================*/
+    const navLink = document.querySelectorAll('.nav_link');
+
+    function linkAction() {
+      const navMenu = document.getElementById('nav-menu');
+      // When we click on each nav__link, we remove the show-menu class
+      navMenu.classList.remove('show-menu');
+    }
+
+    navLink.forEach((n) => n.addEventListener('click', linkAction));
 
     // Cleanup by removing the event listeners when the component unmounts
     return () => {
@@ -35,11 +46,31 @@ export default function Navbar() {
     };
   }, []);
 
+  useEffect(() => {
+    /*==================== CHANGE BACKGROUND HEADER ====================*/
+    function scrollHeader() {
+      const nav = document.getElementById('header');
+      // When the scroll is greater than 200 viewport height, add the scroll-header class to the header tag
+      if (window.scrollY >= 200) {
+        nav.classList.add('scroll-header');
+      } else {
+        nav.classList.remove('scroll-header');
+      }
+    }
+
+    window.addEventListener('scroll', scrollHeader);
+
+    // Cleanup by removing the event listener when the component unmounts
+    return () => {
+      window.removeEventListener('scroll', scrollHeader);
+    };
+  }, []);
+
   return (
     <div>
       <header className="header" id="header">
         <nav className="nav container">
-          <a href="#" className="nav_logo">PJ</a>
+          <a href="/" className="nav_logo">PJ</a>
 
           <div className="nav_menu" id="nav-menu">
             <ul className="nav_list grid">
@@ -60,7 +91,7 @@ export default function Navbar() {
               </li>
               <li className="nav_item">
                 <a href="#Qualification" className="nav_link">
-                  <i className='bx bx-file nav_icon'></i>Qualification 
+                  <i className='bx bx-file nav_icon'></i> Qualification 
                 </a>
               </li>
               <li className="nav_item">
@@ -69,7 +100,7 @@ export default function Navbar() {
                 </a>
               </li>
               <li className="nav_item">
-                <a href="#portfolio" portfolio className="nav_link">
+                <a href="#portfolio" className="nav_link">
                   <i className='bx bx-image nav_icon'></i> Portfolio
                 </a>  
               </li>
