@@ -6,6 +6,7 @@ import Skill from "./Skill"
 import Qulifications from './Qualification'
 import Services from './Service';
 import ScrollUp from './Scroll-up';
+import Contact from './Contact';
 // import Portfolio from './Portfolio';
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
       <Qulifications/>
       <Services/>
       <ScrollUp/>
+      <Contact/>
       {/* <Portfolio/> */}
     </div>
   )

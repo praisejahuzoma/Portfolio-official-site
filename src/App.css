@@ -79,7 +79,7 @@ img{
    --hearder-height: 3rem;
 
    /* change favoirte color */
-   --hue-color:49;
+   --hue-color:899;
 
    /* hsl color mode */
    --first-color: hsl(var(--hue-color), 69%, 61%);
