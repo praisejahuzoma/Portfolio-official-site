@@ -8,6 +8,7 @@ import Services from './Service';
 import ScrollUp from './Scroll-up';
 import Contact from './Contact';
 // import Portfolio from './Portfolio';
+import Footer from './Footer';
 function App() {
   return (
     <div className="App">
@@ -20,6 +21,7 @@ function App() {
       <ScrollUp/>
       <Contact/>
       {/* <Portfolio/> */}
+      <Footer/>
     </div>
   )
 }
