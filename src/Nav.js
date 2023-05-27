@@ -5,6 +5,31 @@ export default function Navbar() {
     const navMenu = document.getElementById('nav-menu');
     const navToggle = document.getElementById('nav-toggle');
     const navClose = document.getElementById('nav-close');
+    const themeButton = document.getElementById('theme-button');
+    const darkTheme = 'dark-theme';
+    const iconTheme = 'bx-sun';
+
+    // Previously selected topic (if user selected)
+    const selectedTheme = localStorage.getItem('selected-theme');
+    const selectedIcon = localStorage.getItem('selected-icon');
+
+    // We obtain the current theme that the interface has by validating the dark-theme class
+    const getCurrentTheme = () => document.body.classList.contains(darkTheme) ? 'dark' : 'light';
+    const getCurrentIcon = () => themeButton.classList.contains(iconTheme) ? 'bx-moon' : 'bx-sun';
+
+    // Function to toggle the theme
+    const toggleTheme = () => {
+      document.body.classList.toggle(darkTheme);
+      themeButton.classList.toggle(iconTheme);
+      localStorage.setItem('selected-theme', getCurrentTheme());
+      localStorage.setItem('selected-icon', getCurrentIcon());
+    };
+
+    // Set the initial theme based on the saved preference
+    if (selectedTheme) {
+      document.body.classList[selectedTheme === 'dark' ? 'add' : 'remove'](darkTheme);
+      themeButton.classList[selectedIcon === 'bx-moon' ? 'add' : 'remove'](iconTheme);
+    }
 
     // Event listener for opening the menu
     const openMenu = () => {
@@ -18,30 +43,31 @@ export default function Navbar() {
 
     // Attach the event listeners
     if (navToggle) {
-      navToggle.addEventListener('click', openMenu);
+      navToggle.addEventListener('click', () => {
+        openMenu();
+        toggleTheme();
+      });
     }
     if (navClose) {
       navClose.addEventListener('click', closeMenu);
     }
-    
-    /*==================== REMOVE MENU MOBILE ====================*/
-    const navLink = document.querySelectorAll('.nav_link');
-
-    function linkAction() {
-      const navMenu = document.getElementById('nav-menu');
-      // When we click on each nav__link, we remove the show-menu class
-      navMenu.classList.remove('show-menu');
+    if (themeButton) {
+      themeButton.addEventListener('click', toggleTheme);
     }
-
-    navLink.forEach((n) => n.addEventListener('click', linkAction));
 
     // Cleanup by removing the event listeners when the component unmounts
     return () => {
       if (navToggle) {
-        navToggle.removeEventListener('click', openMenu);
+        navToggle.removeEventListener('click', () => {
+          openMenu();
+          toggleTheme();
+        });
       }
       if (navClose) {
         navClose.removeEventListener('click', closeMenu);
+      }
+      if (themeButton) {
+        themeButton.removeEventListener('click', toggleTheme);
       }
     };
   }, []);
@@ -67,56 +93,57 @@ export default function Navbar() {
   }, []);
 
   return (
+    // Navbar
     <div>
       <header className="header" id="header">
         <nav className="nav container">
-          <a href="/" className="nav_logo">PJ</a>
+          <a href="#" className="nav_logo">PJ</a>
 
           <div className="nav_menu" id="nav-menu">
             <ul className="nav_list grid">
               <li className="nav_item">
-                <a href="#home" className="nav_link active-link">
-                  <i className='bx bx-home-alt nav_icon'></i> Home
+                <a href="#" className="nav_link active-link">
+                  <i className="bx bx-home-alt nav_icon"></i> Home
                 </a>
               </li>
               <li className="nav_item">
                 <a href="#about" className="nav_link">
-                  <i className='bx bx-user nav_icon'></i> About
+                  <i className="bx bx-user nav_icon"></i> About
                 </a>
               </li>
               <li className="nav_item">
                 <a href="#skills" className="nav_link">
-                  <i className='bx bx-file nav_icon'></i> Skills
+                  <i className="bx bx-file nav_icon"></i> Skills
                 </a>
               </li>
               <li className="nav_item">
-                <a href="#Qualification" className="nav_link">
-                  <i className='bx bx-file nav_icon'></i> Qualification 
+                <a href="#qualification" className="nav_link">
+                  <i className="bx bx-file nav_icon"></i> Qualification
                 </a>
               </li>
               <li className="nav_item">
                 <a href="#services" className="nav_link">
-                  <i className='bx bx-briefcase-alt-2 nav_icon'></i> Services
+                  <i className="bx bx-briefcase-alt-2 nav_icon"></i> Services
                 </a>
               </li>
               <li className="nav_item">
                 <a href="#portfolio" className="nav_link">
-                  <i className='bx bx-image nav_icon'></i> Portfolio
-                </a>  
+                  <i className="bx bx-image nav_icon"></i> Portfolio
+                </a>
               </li>
               <li className="nav_item">
                 <a href="#contact" className="nav_link">
-                  <i className='bx bx-message-rounded-dots nav_icon'></i> Contact Me
+                  <i className="bx bx-message-rounded-dots nav_icon"></i> Contact Me
                 </a>
               </li>
             </ul>
-            <i className='bx bx-x nav_close' id="nav-close"></i>
+            <i className="bx bx-x nav_close" id="nav-close"></i>
           </div>
           <div className="nav_btns">
-            {/* These change button from light mood to dark mood*/}
-            <i className='bx bx-moon change-theme' id="theme-button"></i>
+            {/* Toggle theme button */}
+            <i className="bx bx-moon change-theme" id="theme-button"></i>
             <div className="nav_toggle" id="nav-toggle">
-              <i className='bx bx-menu-alt-left'></i>
+              <i className="bx bx-menu-alt-left"></i>
             </div>
           </div>
         </nav>
