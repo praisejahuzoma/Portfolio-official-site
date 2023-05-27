@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react';
 
 export default function Skill() {
+// Skills javascript
   useEffect(() => {
     const skillsContent = document.getElementsByClassName('skills_content');
     const skillsHeader = document.querySelectorAll('.skills_header');

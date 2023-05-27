@@ -98,7 +98,8 @@ export default function Navbar() {
       <header className="header" id="header">
         <nav className="nav container">
           <a href="#" className="nav_logo">PJ</a>
-
+             
+        {/* navbar section */}
           <div className="nav_menu" id="nav-menu">
             <ul className="nav_list grid">
               <li className="nav_item">
@@ -139,6 +140,7 @@ export default function Navbar() {
             </ul>
             <i className="bx bx-x nav_close" id="nav-close"></i>
           </div>
+        {/* end of navbar */}
           <div className="nav_btns">
             {/* Toggle theme button */}
             <i className="bx bx-moon change-theme" id="theme-button"></i>

@@ -1,3 +1,4 @@
+// imports
 import './App.css';
 import Navbar from "./Nav"
 import HomePage from "./Home"
@@ -9,9 +10,11 @@ import ScrollUp from './Scroll-up';
 import Contact from './Contact';
 import Portfolio from './Portfolio';
 import Footer from './Footer';
+
 function App() {
   return (
     <div className="App">
+      {/* imported files */}
       <Navbar/>
       <HomePage/>
       <About/>

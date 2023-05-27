@@ -8,7 +8,7 @@ export default function Footer(){
                   <h1 class="footer_title">Praisejah</h1>
                   <span class="footer_subtitle">Frontend developer </span>                  
               </div>
-
+            {/* footer links to service, portfolio, and contactme section */}
               <ul class="footer_links">
                   <li>
                       <a href="#services" class="footer_link">Services</a>
@@ -20,7 +20,8 @@ export default function Footer(){
                     <a href="#contact" class="footer_link">Contactme</a>
                 </li>
               </ul>
-
+              
+            {/* socials */}
               <div class="footer_socials">
                   <a href="https://www.github.com/praisejahuzoma" target="-blank" class="footer_social">
                     <i class='bx bxl-github'></i>

@@ -1,8 +1,7 @@
 import React, { useEffect } from 'react';
 
-// ...Existing code...
-
 export default function Services() {
+// service javascript code
   useEffect(() => {
     const modalViews = document.querySelectorAll('.services_modal');
     const modalBtns = document.querySelectorAll('.services_button');

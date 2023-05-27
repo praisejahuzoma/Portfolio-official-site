@@ -1,7 +1,9 @@
 import React from "react"
+
 export default function HomePage(){
     return(
 // Homepage section
+
   <section className="home section" id="home">
       <div className="home_container container grid"> 
          <div className="home_content grid">

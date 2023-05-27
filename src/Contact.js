@@ -1,6 +1,6 @@
 export default function Contact(){
     return(
-        // <!-- contact me -->
+        // <!-- contact me section-->
         <section className="contact section" id="contact">
             <h2 className="section_title">Contact Me</h2>
             <span className="section_subtitle">Let's Talk</span>
@@ -55,7 +55,7 @@ export default function Contact(){
                       <label for="" className="contact_label">Message</label>
                       <textarea name="" id="" cols="0" rows="7" className="contact_input"></textarea>
                   </div>
-  
+            {/* send message button */}
                   <div>
                       <a href="" className="button button--flex">
                           Send Message

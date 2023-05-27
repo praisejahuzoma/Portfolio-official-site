@@ -1,6 +1,7 @@
 import React, { useEffect, useCallback, useRef } from 'react';
 
 export default function Portfolios() {
+// Portfolio javascript
   const slideIndexRef = useRef(1);
 
   const showSlides = useCallback(() => {
@@ -117,12 +118,12 @@ export default function Portfolios() {
               </a>
             </div>
           </div>
-
+         {/* prev and next arrows */}
           <a className="prev" onClick={() => plusSlides(-1)}>&#10094;</a>
           <a className="next" onClick={() => plusSlides(1)}>&#10095;</a>
         </div>
 
-        {/* add arrows */}
+        {/* prev and next dots */}
         <div style={{ textAlign: "center" }}>
           <span className="dot" onClick={() => currentSlides(1)}></span>
           <span className="dot" onClick={() => currentSlides(2)}></span>

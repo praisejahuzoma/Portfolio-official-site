@@ -14,7 +14,6 @@ export default function About(){
              <p className="about_description">
                 My skill set is diverse, ranging from knowledge of React programming through HTML, CSS, and Javascript. 
                 My main goal is to help other people create websites utilizing the best technologies available.</p>
-                {/* High level experience in web design and development knowledg, producing quality work.  */}
 
               <div className="about_info">
                  <div>

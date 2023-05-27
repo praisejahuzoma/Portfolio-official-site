@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react';
 
 export default function Qualifications() {
+// Qaulification javascript
   useEffect(() => {
     const tabs = document.querySelectorAll('[data-target]');
     const tabsContents = document.querySelectorAll('[data-content]');
