@@ -24,7 +24,7 @@ export default function Qualifications() {
 
   return (
     // qualification
-    <section className="qualification section" id="Qualification">
+    <section className="qualification section" id="qualification">
       <h2 className="section_title">Qualification</h2>
       <span className="section_subtitle">My personal journey</span>
 
