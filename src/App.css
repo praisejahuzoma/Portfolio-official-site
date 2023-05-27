@@ -79,7 +79,7 @@ img{
    --hearder-height: 3rem;
 
    /* change favoirte color */
-   --hue-color:899;
+   --hue-color:200;
 
    /* hsl color mode */
    --first-color: hsl(var(--hue-color), 69%, 61%);
@@ -701,6 +701,99 @@ color: var(--first-color);
   justify-content: center;
 }
 
+/* portfolio */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+
+
+
+
+/* portfolio */
+.portfolio_container{
+  overflow: initial;
+}
+
+.portfolio_content{
+  padding: 0 1.5rem;
+}
+
+.portfolio_img{
+  width: 3805px;
+  border-radius: .5rem;
+  justify-self: center;
+}
+
+.portfolio_title{
+  font-size: var(--h3-font-size);
+  margin-bottom: var(--mb-0-5);
+}
+
+.portfolio_description{
+  margin-bottom: var(--mb-0-75);
+}
+
+.portfolio_button:hover .button-icon{
+  transform: translateX(.25rem);
+}
+
+/* Position the "next button" to the right */
+/* .next {
+  right: 20rem;
+  border-radius: 3px 0 0 3px;
+}
+.prev {
+  left: 20rem;
+} */
+.next {
+  right: 22px;
+  border-radius: 3px 0 0 3px;
+}
+
+  /* The dots/bullets/indicators */
+  .dot {
+    cursor: pointer;
+    height: 7px;
+    width: 7px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+    margin-bottom: -2.5rem;
+  }
+
+  
+  .dots {
+    cursor: pointer;
+    height: 7px;
+    width: 7px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+
+  .active, .dot:hover {
+    background-color: #9e8fbb;
+  }
+
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+ 
+    width: auto;
+    padding: 5px;
+    margin-top: -17rem;
+    color: black;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none; 
+  }
+
 /* active modal */
 .active-modal{
   opacity: 1;
@@ -746,68 +839,6 @@ color: var(--first-color);
 ::-webkit-scrollbar-thumb:hover{
    background-color: var(--text-color-light);
 }
-/* portfolio */
-/* .portfolio_container{
-  overflow: initial;
-}
-
-.portfolio_content{
-  padding: 0 1.5rem;
-}
-
-.portfolio_img{
-  width: 3805px;
-  border-radius: .5rem;
-  justify-self: center;
-}
-
-.portfolio_title{
-  font-size: var(--h3-font-size);
-  margin-bottom: var(--mb-0-5);
-}
-
-.portfolio_description{
-  margin-bottom: var(--mb-0-75);
-}
-
-.portfolio_button:hover .button-icon{
-  transform: translateX(.25rem);
-} */
-
-
-/* Position the "next button" to the right */
-/* .next {
-  right: 0;
-  border-radius: 3px 0 0 3px;
-} */
-
-/* The dots/bullets/indicators */
-/* .dot {
-  cursor: pointer;
-  height: 7px;
-  width: 7px;
-  margin: 0 2px;
-  background-color: #bbb;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.6s ease;
-  margin-bottom: -2.5rem;
-}
-
-.dots {
-  cursor: pointer;
-  height: 7px;
-  width: 7px;
-  margin: 0 2px;
-  background-color: #bbb;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.6s ease;
-} */
-
-/* .active, .dot:hover {
-  background-color: #9e8fbb;
-} */
 
 /* Fading animation */
 @-webkit-keyframes fade {
@@ -819,45 +850,7 @@ color: var(--first-color);
   from {opacity: .7} 
   to {opacity: 1}
 }
-  /* On smaller screens, decrease text size */
-  /* @media only screen and (max-width: 300px) {
-    .prev, .next,.text {font-size: 11px}
-  } */
-
-/* Position the previous and next buttons */
-/* .prev,
-.next {
-  position: absolute;
-  top: 40%;
-  transform: translateY(-50%);
-  width: auto;
-  padding: 16px;
-  color: black;
-  font-weight: bold;
-  font-size: 24px;
-  transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
-  user-select: none;
-  cursor: pointer;
-
-} */
-
-/* Position the previous button on the left */
-/* .prev {
-  left: 0;
-} */
-
-/* Position the next button on the right */
-/* .next {
-  right: 0;
-} */
-
-/* Position the container relative to the demo images */
-/* .portfolio_container {
-  position: relative;
-} */
-
-
+ 
   /* contact me */
   .contact_container{
     row-gap:3rem;
@@ -948,7 +941,7 @@ color: var(--first-color);
 .footer_copy{
     font-size: var(--smaller-font-size);
     text-align: center;
-    color: var(--text-color-light);
+    color: white;
     margin-top: var(--mb-3);
 }
 
@@ -960,6 +953,59 @@ color: var(--first-color);
 }
 
  /* media queries */
+ /* On smaller screens, decrease text size */
+/* @media only screen and (max-width: 300px) {
+  .prev,
+  .next,
+  .text {
+    font-size: 11px;
+  }
+} */
+
+/* The dots/bullets/indicators */
+/* .dot {
+  cursor: pointer;
+  height: 7px;
+  width: 7px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+  margin-bottom: -2.5rem;
+}
+
+.dots {
+  cursor: pointer;
+  height: 7px;
+  width: 7px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+} */
+
+/* .active,
+.dot:hover {
+  background-color: var(--first-color);
+}
+
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  width: auto;
+  padding: 110px;
+  color: black;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+} */
+
+
     /* for small screen */
     @media screen and (max-width: 350px){
       .container{
@@ -994,12 +1040,10 @@ color: var(--first-color);
      .services_modal{
       padding: 0 .5rem;
      }
-     /* .project_img{
-      width: 90px;
-      margin-left: 600px;
-     } */
-  }
+     
+    
 
+  }
 
 
     /* medium screen */
@@ -1029,13 +1073,23 @@ color: var(--first-color);
          grid-template-columns: .6fr;
          justify-content: center;
       }
-      /* .project_container{
-          padding: 40px;
+      .prev, .next {
+        cursor: pointer;
+        position: absolute;
+     
+        width: auto;
+        padding: 5px;
+        margin-top: -20rem;
+        color: black;
+        font-weight: bold;
+        font-size: 18px;
+        transition: 0.6s ease;
+        border-radius: 0 3px 3px 0;
+        user-select: none; 
       }
-      .project_img{
-          width: 900px;
-      } */
+    
   }
+
 
 /*  medium 2 screen */
 @media screen and (min-width:768px){
@@ -1145,31 +1199,41 @@ body{
 .services_modal-content{
   width: 450px;
 }
-/* .portfolio_img{
+
+
+.portfolio_img{
   width: 450px;
-  margin-left: 185px;
+  margin-left: 135px;
 }
 .portfolio_data{
-   margin-left: 180px;
+   margin-left: 120px;
    width: 500px;
 }
+
 .portfolio_content{
-  align-items: center;
+   align-items: center;
 }
+
 .prev, .next {
   cursor: pointer;
   position: absolute;
-  top: 10%;
   width: auto;
   padding: 110px;
-  margin-top: -22px;
+  margin-top: -26rem;
   color: black;
   font-weight: bold;
   font-size: 18px;
   transition: 0.6s ease;
   border-radius: 0 3px 3px 0;
   user-select: none; 
-} */
+}
+.next {
+  right: -30px;
+  border-radius: 3px 0 0 3px;
+}
+.prev{
+  left: 20px;
+}
 .footer_container{
   grid-template-columns: repeat(3, 1fr);
 }
@@ -1188,8 +1252,44 @@ body{
 .footer_copy{
   margin-top: 4.5rem;
 }
+.portfolio_img{
+  width: 500px;
+  margin-left: 135px;
 }
-
+}
+@media screen and (min-width:788px){
+  .portfolio_img{
+    width: 600px;
+    margin-left: 89px;
+  }
+  .portfolio_data{
+    margin-left: 89px;
+  }
+  .prev{
+    left: -55px;
+  }
+  .next{
+    right: -55px;
+  }
+}
+@media screen and (min-width:888px){
+  .portfolio_img{
+    width: 600px;
+    margin-left: 149px;
+  }
+  .portfolio_data{
+    margin-left: 149px;
+  }
+  
+}
+@media screen and (min-width:904px) {
+  .portfolio_img{
+    margin-left: 170px;
+  }
+  .portfolio_data{
+    margin-left: 170px;
+  }
+}
 
      /* for large screen */
 @media screen and (min-width:1024px) {
@@ -1212,21 +1312,8 @@ body{
       .services_contanier{
           grid-template-columns:repeat(2, 238px) ;
       }
-  
-      /* .portfolio_content{
-          column-gap: 5rem;
-      } */
-      /* .portfolio_img{
-         width: 650px;
-         margin-left: 135px;
-      }
-      .portfolio_data{
-          margin-left: 120px;
-          width: 500px;
-      }
-      .dots{
-          font-size: 3.5rem;
-      } */
+     
+      
   
       .contact_form{
           width: 460px;
@@ -1234,20 +1321,7 @@ body{
       .contact_input{
           grid-template-columns: repeat(2,1fr);
       }
-      /* .prev, .next {
-        cursor: pointer;
-        position: absolute;
-        top: 10%;
-        width: auto;
-        padding: 110px;
-        margin-top: -22px;
-        color: black;
-        font-weight: bold;
-        font-size: 18px;
-        transition: 0.6s ease;
-        border-radius: 0 3px 3px 0;
-        user-select: none; 
-      } */
+      
       .skills{
       margin-top: -12rem;
       padding: 13rem;
@@ -1263,14 +1337,69 @@ body{
         margin-top: -23rem;
         padding: 20rem;
       }
+     
+     
       .contact{
         margin-top: -15rem;
         padding: 14rem;
       }
 
-      /* .portfolio{
-      margin-top: -17rem;
-      padding: 5rem;
-      } */
+
+      .prev, .next {
+        cursor: pointer;
+        position: absolute;
+        
+        width: auto;
+        padding: 110px;
+        margin-top: -28rem;
+        color: black;
+        font-weight: bold;
+        font-size: 18px;
+        transition: 0.6s ease;
+        border-radius: 0 3px 3px 0;
+        user-select: none; 
+      }
+      .prev{
+        left: 80px;
+      }
+      .next{
+        right: 80px;
+      }
+
+.portfolio{
+  margin-top: -19rem;
+  padding: 16rem;
+}
+     
+}
+@media screen and (min-width:1054px) {
+  .prev{
+    left: 2rem;
+  }
+  .next{
+    right: 2rem;
+  }
 }
 
+@media screen and (min-width:1204px) {
+  .prev{
+    left: 10rem;
+  }
+  .next{
+    right: 10rem;
+  }
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    
+    width: auto;
+    padding: 110px;
+    margin-top: -27rem;
+    color: black;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none; 
+  }
+}
