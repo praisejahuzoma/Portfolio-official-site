@@ -7,7 +7,7 @@ import Qulifications from './Qualification'
 import Services from './Service';
 import ScrollUp from './Scroll-up';
 import Contact from './Contact';
-// import Portfolio from './Portfolio';
+import Portfolio from './Portfolio';
 import Footer from './Footer';
 function App() {
   return (
@@ -18,9 +18,9 @@ function App() {
       <Skill/>
       <Qulifications/>
       <Services/>
+      <Portfolio/>
       <ScrollUp/>
       <Contact/>
-      {/* <Portfolio/> */}
       <Footer/>
     </div>
   )
