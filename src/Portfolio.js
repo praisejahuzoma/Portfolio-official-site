@@ -1,6 +1,6 @@
 import React, { useEffect, useCallback, useRef } from 'react';
 
-export default function Portfolios() {
+const Portfolios = () => {
 // Portfolio javascript
   const slideIndexRef = useRef(1);
 
@@ -135,3 +135,4 @@ export default function Portfolios() {
     </section>
   );
 }
+export default Portfolios;

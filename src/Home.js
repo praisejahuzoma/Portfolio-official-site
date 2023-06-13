@@ -1,6 +1,6 @@
 import React from "react"
 
-export default function HomePage(){
+const HomePage = () => {
     return(
 // Homepage section
 
@@ -46,4 +46,4 @@ export default function HomePage(){
   </section>
     )
 }
-    
+export default HomePage;

@@ -1,5 +1,7 @@
 // imports
+import React from 'react';
 import './App.css';
+
 import Navbar from "./Nav"
 import HomePage from "./Home"
 import About from "./About"
@@ -11,7 +13,7 @@ import Contact from './Contact';
 import Portfolio from './Portfolio';
 import Footer from './Footer';
 
-function App() {
+const App = () => {
   return (
     <div className="App">
       {/* imported files */}

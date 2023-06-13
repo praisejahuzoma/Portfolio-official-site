@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 
-export default function Services() {
+const Services = () => {
 // service javascript code
   useEffect(() => {
     const modalViews = document.querySelectorAll('.services_modal');
@@ -120,4 +120,4 @@ export default function Services() {
 </section>
   );
 }
-
+export default Services;

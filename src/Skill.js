@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 
-export default function Skill() {
+const Skill = () => {
 // Skills javascript
   useEffect(() => {
     const skillsContent = document.getElementsByClassName('skills_content');
@@ -133,3 +133,4 @@ export default function Skill() {
     </section>
   );
 }
+export default Skill;

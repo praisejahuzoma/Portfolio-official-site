@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 
-export default function Qualifications() {
+const Qaulifications = () => {
 // Qaulification javascript
   useEffect(() => {
     const tabs = document.querySelectorAll('[data-target]');
@@ -160,3 +160,4 @@ export default function Qualifications() {
     </section>
   );
 }
+export default Qaulifications;
