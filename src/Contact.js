@@ -1,10 +1,12 @@
-import React from "react";
+import React, { useState } from "react";
 import emailjs from 'emailjs-com';
 
 const Contact = () => {
+  const [isSent, setIsSent] = useState(false);
+
   const handleSubmit = (e) => {
     e.preventDefault();
-
+    
     // Add your email template ID and service ID
     const templateId = 'template_69bc9g5';
     const serviceId = 'service_h3wuafz';
@@ -15,6 +17,7 @@ const Contact = () => {
     emailjs.sendForm(serviceId, templateId, e.target, userId)
       .then((result) => {
         console.log('Email successfully sent!');
+        setIsSent(true); // Set the submission status to true
       }, (error) => {
         console.error('Error sending email:', error);
       });
@@ -72,19 +75,19 @@ const Contact = () => {
             </div>
           </div>
           <div className="contact_content">
-            <label htmlFor="" className="contact_label">Project</label>
-            <input type="text" className="contact_input" name="project" />
-          </div>
-          <div className="contact_content">
             <label htmlFor="" className="contact_label">Message</label>
             <textarea name="message" cols="0" rows="7" className="contact_input" required></textarea>
           </div>
           {/* send message button */}
           <div>
-            <button type="submit" className="button button--flex">
-              Send Message
-              <i className='bx bxs-paper-plane button_icon'></i>
-            </button>
+            {isSent ? (
+              <p>Message Sent!</p>
+            ) : (
+              <button type="submit" className="button button--flex">
+                Send Message
+                <i className='bx bxs-paper-plane button_icon'></i>
+              </button>
+            )}
           </div>
         </form>
       </div>
