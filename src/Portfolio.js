@@ -56,7 +56,7 @@ const Portfolios = () => {
             <div className="portfolio_data">
               <h3 className="portfolio_title">Online Store</h3>
               <p className="portfolio_description">Website adaptable to all devices.</p>
-              <a href="#demo" className="button button--flex button--small portfolio_button">
+              <a href="https://pink-shop.netlify.app/" className="button button--flex button--small portfolio_button">
                 Demo
                 <i className='bx bx-right-arrow-alt button-icon'></i>
               </a>
@@ -70,7 +70,7 @@ const Portfolios = () => {
             <div className="portfolio_data">
               <h3 className="portfolio_title">Ui-Clock</h3>
               <p className="portfolio_description">Responsive Dark and Light Mode Clock</p>
-              <a href="#demo" className="button button--flex button--small portfolio_button">
+              <a href="https://uiclock.netlify.app/" className="button button--flex button--small portfolio_button">
                 Demo
                 <i className='bx bx-right-arrow-alt button-icon'></i>
               </a>
@@ -84,7 +84,7 @@ const Portfolios = () => {
             <div className="portfolio_data">
               <h3 className="portfolio_title">Market List Calculator</h3>
               <p className="portfolio_description">Website that calculates your market list price</p>
-              <a href="#demo" className="button button--flex button--small portfolio_button">
+              <a href="https://market-calculator.netlify.app/" className="button button--flex button--small portfolio_button">
                 Demo
                 <i className='bx bx-right-arrow-alt button-icon'></i>
               </a>
@@ -98,7 +98,7 @@ const Portfolios = () => {
             <div className="portfolio_data">
               <h3 className="portfolio_title">Weather App</h3>
               <p className="portfolio_description">Get your city's weather</p>
-              <a href="#demo" className="button button--flex button--small portfolio_button">
+              <a href="https://api-weather-forecast-app.netlify.app/" className="button button--flex button--small portfolio_button">
                 Demo
                 <i className='bx bx-right-arrow-alt button-icon'></i>
               </a>
@@ -112,7 +112,7 @@ const Portfolios = () => {
             <div className="portfolio_data">
               <h3 className="portfolio_title">Music App</h3>
               <p className="portfolio_description">Music App</p>
-              <a href="#demo" className="button button--flex button--small portfolio_button">
+              <a href="https://mymusic-app.netlify.app/" className="button button--flex button--small portfolio_button">
                 Demo
                 <i className='bx bx-right-arrow-alt button-icon'></i>
               </a>
