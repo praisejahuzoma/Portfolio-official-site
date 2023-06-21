@@ -56,10 +56,10 @@ const Portfolios = () => {
             <div className="portfolio_data">
               <h3 className="portfolio_title">Online Store</h3>
               <p className="portfolio_description">Website adaptable to all devices.</p>
-              <a href="https://pink-shop.netlify.app/" className="button button--flex button--small portfolio_button">
+              <button onClick={() => window.open("https://pink-shop.netlify.app/", "_blank", "noopener noreferrer")} className="button button--flex button--small portfolio_button">
                 Demo
                 <i className='bx bx-right-arrow-alt button-icon'></i>
-              </a>
+              </button>
             </div>
           </div>
 
@@ -70,10 +70,10 @@ const Portfolios = () => {
             <div className="portfolio_data">
               <h3 className="portfolio_title">Ui-Clock</h3>
               <p className="portfolio_description">Responsive Dark and Light Mode Clock</p>
-              <a href="https://uiclock.netlify.app/" className="button button--flex button--small portfolio_button">
+              <button onClick={() => window.open("https://uiclock.netlify.app/", "_blank", "noopener noreferrer")} className="button button--flex button--small portfolio_button">
                 Demo
                 <i className='bx bx-right-arrow-alt button-icon'></i>
-              </a>
+              </button>
             </div>
           </div>
 
@@ -84,10 +84,10 @@ const Portfolios = () => {
             <div className="portfolio_data">
               <h3 className="portfolio_title">Market List Calculator</h3>
               <p className="portfolio_description">Website that calculates your market list price</p>
-              <a href="https://market-calculator.netlify.app/" className="button button--flex button--small portfolio_button">
+              <button onClick={() => window.open("https://market-calculator.netlify.app/", "_blank", "noopener noreferrer")} className="button button--flex button--small portfolio_button">
                 Demo
                 <i className='bx bx-right-arrow-alt button-icon'></i>
-              </a>
+              </button>
             </div>
           </div>
 
@@ -98,10 +98,10 @@ const Portfolios = () => {
             <div className="portfolio_data">
               <h3 className="portfolio_title">Weather App</h3>
               <p className="portfolio_description">Get your city's weather</p>
-              <a href="https://api-weather-forecast-app.netlify.app/" className="button button--flex button--small portfolio_button">
+              <button onClick={() => window.open("https://api-weather-forecast-app.netlify.app/", "_blank", "noopener noreferrer")} className="button button--flex button--small portfolio_button">
                 Demo
                 <i className='bx bx-right-arrow-alt button-icon'></i>
-              </a>
+              </button>
             </div>
           </div>
 
@@ -112,15 +112,15 @@ const Portfolios = () => {
             <div className="portfolio_data">
               <h3 className="portfolio_title">Music App</h3>
               <p className="portfolio_description">Music App</p>
-              <a href="https://mymusic-app.netlify.app/" className="button button--flex button--small portfolio_button">
+              <button onClick={() => window.open("https://mymusic-app.netlify.app/", "_blank", "noopener noreferrer")} className="button button--flex button--small portfolio_button">
                 Demo
                 <i className='bx bx-right-arrow-alt button-icon'></i>
-              </a>
+              </button>
             </div>
           </div>
          {/* prev and next arrows */}
-          <a className="prev" onClick={() => plusSlides(-1)}>&#10094;</a>
-          <a className="next" onClick={() => plusSlides(1)}>&#10095;</a>
+          <span className="prev" onClick={() => plusSlides(-1)}>&#10094;</span>
+          <span  className="next" onClick={() => plusSlides(1)}>&#10095;</span>
         </div>
 
         {/* prev and next dots */}
