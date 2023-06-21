@@ -22,7 +22,7 @@ const HomePage = () => {
              </div>
 
              <div className="home_img">
-              <img src="/image/Home_img.png" alt="Home image"/>
+              <img src="/image/Home_img.png" alt="image for my home section"/>
              </div>
              <div class="home_data">
                   <h1 className="home_title fade-in">Hi, <br/>I'm Praisejah</h1>

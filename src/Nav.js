@@ -99,7 +99,7 @@ const Navbar = () => {
     <div>
       <header className="header" id="header">
         <nav className="nav container">
-          <a href="#" className="nav_logo">
+          <a href="#home" className="nav_logo">
             PJ
           </a>
 
@@ -108,7 +108,7 @@ const Navbar = () => {
             <ul className="nav_list grid">
               <li className="nav_item">
                 <a
-                  href="#"
+                  href="#home"
                   className={`nav_link ${activeLink === 'home' ? 'active-link' : ''}`}
                   onClick={() => handleLinkClick('home')}
                 >
