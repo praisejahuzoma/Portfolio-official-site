@@ -83,7 +83,7 @@ const Contact = () => {
             {isSent ? (
               <p>Message Sent!</p>
             ) : (
-              <button type="submit" className="button button--flex">
+              <button type="submit" className="button button--flex contact_button">
                 Send Message
                 <i className='bx bxs-paper-plane button_icon'></i>
               </button>
