@@ -18,6 +18,11 @@ body{
     color: var(--text-color);
 }
 
+link[rel="icon"] {
+  width: 504px; /* Set the desired width */
+  height: 504px; /* Set the desired height */
+}
+
 h1,h2,h3,h4{
     color: var(--title-color);
     font-weight: var(--font-semi-bold);
