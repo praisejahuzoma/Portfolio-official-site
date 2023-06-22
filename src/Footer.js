@@ -28,7 +28,7 @@ const Footer = () =>{
                     <i class='bx bxl-github'></i>
                   </a>
 
-                  <a href="https://www.instagram.com/" target="-blank" class="footer_social">
+                  <a href="https://www.instagram.com/iampraiseuzoma/?igshid=MzRlODBiNWFlZA%3D%3D" target="-blank" class="footer_social">
                     <i class='bx bxl-instagram'></i>
                   </a>
 
