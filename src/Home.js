@@ -8,7 +8,7 @@ const HomePage = () => {
       <div className="home_container container grid"> 
          <div className="home_content grid">
              <div className="home_social">
-                 <a href="http://www.instagram.com/" target="_blank" rel="noopener noreferrer" className="home_social-icon">
+                 <a href="https://www.instagram.com/iampraiseuzoma/?igshid=MzRlODBiNWFlZA%3D%3D" target="_blank" rel="noopener noreferrer" className="home_social-icon">
                      <i class='bx bxl-instagram' ></i>
                  </a>
 
