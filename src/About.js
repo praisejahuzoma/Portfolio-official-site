@@ -31,7 +31,7 @@ const About = () => {
              </div>
 
              <div className="about_buttons">
-                 <a download="" href="images/undraw.svg"className="button button--flex">
+                 <a download="" href="/Resume.pdf"className="button button--flex">
                     Download CV<i class='bx bx-cloud-download button_icon' ></i>
                 </a>
              </div>
