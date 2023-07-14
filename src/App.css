@@ -1164,7 +1164,7 @@ body.dark-theme{
     }
     
     .about_img{
-       width: 350px;
+       width: 360px;
     }
 
     .about_description{
@@ -1318,7 +1318,7 @@ body.dark-theme{
           padding: 0;
       }
       .home_img{
-          width: 400px;
+          width: 470px;
       }
       .home_social{
           transform: translateX(-6rem);
