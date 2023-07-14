@@ -32,7 +32,7 @@ const About = () => {
 
              <div className="about_buttons">
                  <a download="" href="/Resume.pdf"className="button button--flex">
-                    Download CV<i class='bx bx-cloud-download button_icon' ></i>
+                    Download Resume<i class='bx bx-cloud-download button_icon' ></i>
                 </a>
              </div>
          </div>
