@@ -15,8 +15,28 @@ Make sure you have the following installed on your machine:
 2. Navigate to the directory where you want to clone the project.
 3. Run the following command to clone the repository:
 
-git clone https://github.com/praisejahuzoma/Portfolio-official-site.git
+       git clone https://github.com/praisejahuzoma/Portfolio-official-site.git
 
+### Install Dependencies
+1. Change into the cloned project directory:
+   
+       cd official-site
+
+2. Install the required dependencies using npm:
+
+       npm install
+
+### Start the Development Server
+ * Run the following command to start the development server:
+
+       npm start
+
+**This will start the React development server, and the portfolio website should be accessible at http://localhost:3000 in your web browser.**
+
+### Build for Production
+* To build the project for production, run the following command:
+  
+      npm run build
 
 
 Builds the app for production to the `build` folder.\
