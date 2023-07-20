@@ -31,12 +31,42 @@ Make sure you have the following installed on your machine:
 
        npm start
 
-**This will start the React development server, and the portfolio website should be accessible at http://localhost:3000 in your web browser.**
+**This will start the React development server, and the portfolio website should be accessible at `http://localhost:3000` in your web browser.**
 
 ### Build for Production
 * To build the project for production, run the following command:
   
       npm run build
+
+This will create an optimized build of the project in the `build` directory, ready to be deployed to a web server.
+
+## Technologies Used
+* HTML5
+* CSS3
+* JavaScript (ES6)
+* React
+* React Router Dom
+* emailjs-com
+* Web Vitals
+* Git
+* GitHub
+
+## Contributing
+I appreciate feedback and contributions to my projects. If you find any issues or have suggestions for improvement, here's how you can contribute:
+
+1. Fork the repository to your GitHub account.
+2. Clone the forked repository to your local machine.
+3. Create a new branch with a descriptive name for your feature or bug fix:
+
+       git checkout -b feature/your-feature-name 
+
+1. Make your changes and improvements, and commit them with a descriptive commit message:
+
+       git commit -m "Add your brief commit message here"
+
+2. Push your changes to your forked repository on GitHub:
+
+       git push origin feature/your-feature-name
 
 
 Builds the app for production to the `build` folder.\
