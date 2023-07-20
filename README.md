@@ -68,6 +68,15 @@ I appreciate feedback and contributions to my projects. If you find any issues o
 
        git push origin feature/your-feature-name
 
+* Create a pull request from your branch to the main repository's main branch.
+* Provide a detailed description of your changes in the pull request, and submit it.
+* I will review your contribution and merge it if everything looks good.
+
+**If you are unsure about anything or have questions, feel free to reach out to me via email or create a GitHub issue.**
+
+## Contact
+* Email: **praisejah.c.uzoma@gmail.com**
+* GitHub: github.com/your-username
 
 Builds the app for production to the `build` folder.\
 It correctly bundles React in production mode and optimizes the build for the best performance.
