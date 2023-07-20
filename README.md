@@ -1,25 +1,23 @@
-# Getting Started with Create React App
+# My Portfolio
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Explore my portfolio website, featuring demos, resume, and GitHub repositories, showcasing my passion for web development and design.
 
-## Available Scripts
+## Usage
+To view my portfolio locally or make changes to the project, follow these steps:
 
-In the project directory, you can run:
+### Prerequisites
 
-### `npm start`
+Make sure you have the following installed on your machine:
+* Node.js:  [Download Node.js](https://nodejs.org/en/download)
+  
+## Clone the Repository
+1. Open your terminal or command prompt.
+2. Navigate to the directory where you want to clone the project.
+3. Run the following command to clone the repository:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+git clone https://github.com/your-username/official-site.git
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
 
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
 
 Builds the app for production to the `build` folder.\
 It correctly bundles React in production mode and optimizes the build for the best performance.
