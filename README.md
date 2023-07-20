@@ -15,7 +15,7 @@ Make sure you have the following installed on your machine:
 2. Navigate to the directory where you want to clone the project.
 3. Run the following command to clone the repository:
 
-git clone https://github.com/your-username/official-site.git
+git clone git@github.com:praisejahuzoma/Portfolio-official-site.git
 
 
 
