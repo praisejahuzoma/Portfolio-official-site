@@ -6,7 +6,7 @@ const Contact = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    
+
     // Add your email template ID and service ID
     const templateId = 'template_69bc9g5';
     const serviceId = 'service_h3wuafz';
@@ -18,16 +18,21 @@ const Contact = () => {
       .then((result) => {
         console.log('Email successfully sent!');
         setIsSent(true); // Set the submission status to true
-      }, (error) => {
+
+        // Reset the form after submission
+        e.target.reset();
+
+        // Reset the isSent state after 2 seconds
+        setTimeout(() => {
+          setIsSent(false);
+        }, 2000);
+      })
+      .catch((error) => {
         console.error('Error sending email:', error);
       });
-
-    // Reset the form after submission
-    e.target.reset();
   };
 
   return (
-    // <!-- contact me section-->
     <section className="contact section" id="contact">
       <h2 className="section_title">Contact Me</h2>
       <span className="section_subtitle">Let's Talk</span>
