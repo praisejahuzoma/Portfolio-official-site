@@ -53,7 +53,7 @@ const Contact = () => {
 
             <div>
               <h3 className="contact_title">Email</h3>
-              <span className="contact_subtitle">Praisejah.c.uzoma@gmail.com</span>
+              <span className="contact_subtitle">praise@praisejahuzoma.com</span>
             </div>
           </div>
 
