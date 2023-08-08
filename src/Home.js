@@ -1,11 +1,21 @@
-import React from "react"
+import React, { useState, useEffect } from "react";
 
 const HomePage = () => {
+    const [fadeIn, setFadeIn] = useState(false);
+  
+    useEffect(() => {
+      // Set the fade-in class after a short delay to trigger the animation
+      const timeout = setTimeout(() => {
+        setFadeIn(true);
+      }, 100);
+  
+      return () => clearTimeout(timeout);
+    }, []);
     return(
 // Homepage section
 
-  <section className="home section" id="home">
-      <div className="home_container container grid"> 
+<section className={`home section ${fadeIn ? 'fade-in active' : ''}`} id="home">
+  <div className="home_container container grid home">
          <div className="home_content grid">
              <div className="home_social">
                  <a href="https://www.instagram.com/iampraiseuzoma/?igshid=MzRlODBiNWFlZA%3D%3D" target="_blank" rel="noopener noreferrer" className="home_social-icon">

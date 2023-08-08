@@ -1357,3 +1357,25 @@ body.dark-theme{
       
    }
  /* end of media queries */
+
+
+
+
+
+ 
+ /* Add this CSS to your existing styles or create a new stylesheet */
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.fade-in.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Additional style to remove background color */
+.home.fade-in.active {
+  background-color: transparent;
+}
