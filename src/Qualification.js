@@ -48,11 +48,11 @@ const Qaulifications = () => {
             {/* qualification 1 */}
             <div className="qualification_data">
               <div>
-                <h3 className="qualification_title">Html / Css</h3>
-                <span className="qualification_subtitle">W3-School / Freecode Camp</span>
+                <h3 className="qualification_title">Html / Css / Bulma / Tailwind</h3>
+                <span className="qualification_subtitle">W3-School / Freecode Camp / PinAfrca / IGhub</span>
                 <div className="qualification_calender">
                   <i className="bx bx-calendar"></i>
-                  2018 - 2019
+                  2019 - 2020
                 </div>
               </div>
 
@@ -73,7 +73,7 @@ const Qaulifications = () => {
 
               <div>
                 <h3 className="qualification_title">Javasript</h3>
-                <span className="qualification_subtitle">Javascript-info / Udacity</span>
+                <span className="qualification_subtitle">Javascript-info / Udacity / Astra Nova</span>
                 <div className="qualification_calender">
                   <i className="bx bx-calendar"></i>
                   2020-2022
@@ -111,7 +111,7 @@ const Qaulifications = () => {
                 <span className="qualification_subtitle">Scrimba / Udacity</span>
                 <div className="qualification_calender">
                   <i className="bx bx-calendar"></i>
-                  2021-2022
+                  2022-2023
                 </div>
               </div>
             </div>
@@ -122,11 +122,11 @@ const Qaulifications = () => {
             {/* qualification 1 */}
             <div className="qualification_data">
               <div>
-                <h3 className="qualification_title">Frontend Developer</h3>
-                <span className="qualification_subtitle">Html, Css, Javascript, React</span>
+                <h3 className="qualification_title">Innovation Growth Hub - intenship</h3>
+                <span className="qualification_subtitle">Html, Css, Scratch</span>
                 <div className="qualification_calender">
                   <i className="bx bx-calendar"></i>
-                  2018 - 2021
+                  2019 - 2020
                 </div>
               </div>
 
@@ -146,11 +146,11 @@ const Qaulifications = () => {
               </div>
 
               <div>
-                <h3 className="qualification_title">Ui Designer</h3>
-                <span className="qualification_subtitle">Figma</span>
+                <h3 className="qualification_title">Pearl Impact Network Africa (Volunteer) </h3>
+                <span className="qualification_subtitle">HTML, CSS, Tailwind, JavaScript</span>
                 <div className="qualification_calender">
                   <i className="bx bx-calendar"></i>
-                  2021
+                  2023
                 </div>
               </div>
             </div>

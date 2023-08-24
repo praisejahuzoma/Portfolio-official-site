@@ -45,7 +45,7 @@ const Portfolios = () => {
   return (
     <section className="portfolio section" id="portfolio">
       <h2 className="section_title">Portfolio</h2>
-      <span className="section_subtitle">Most recent work</span>
+      <span className="section_subtitle">Some of my Projects</span>
 
       <div className="portfolio_container container slideshow-container">
         <div className="swiper-wrapper">

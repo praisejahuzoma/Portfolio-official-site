@@ -157,6 +157,22 @@ body.dark-theme{
   --scroll-thumb-color: hsl(var(--hue-color), 12%, 36%);
 }
 
+/* animation */
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.fade-in.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+
+.home.fade-in.active {
+  background-color: transparent;
+}
 /* button dark/light */
 .nav_btns{
   display: flex;
@@ -531,23 +547,28 @@ body.dark-theme{
 }
 
 .skills_css{
-  width: 85%;
+  width: 90%;
 }
 
 .skills_js{
-  width: 70%;
+  width: 75%;
 }
 
 .skills_react{
   width: 65%;
 }
-
+.skills_vsc{
+  width: 9%;
+}
 .skills_figma{
-  width: 50%;
+  width: 65%;
 }
 
 .skills_photoshop{
   width: 35%;
+}
+.skills_vsc{
+  width: 95%;
 }
 
 .skills_close .skills_list{
@@ -1361,21 +1382,3 @@ body.dark-theme{
 
 
 
-
- 
- /* Add this CSS to your existing styles or create a new stylesheet */
-.fade-in {
-  opacity: 0;
-  transform: translateY(20px);
-  transition: opacity 0.8s ease, transform 0.8s ease;
-}
-
-.fade-in.active {
-  opacity: 1;
-  transform: translateY(0);
-}
-
-/* Additional style to remove background color */
-.home.fade-in.active {
-  background-color: transparent;
-}

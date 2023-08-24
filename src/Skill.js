@@ -63,7 +63,7 @@ const Skill = () => {
               <div className="skills_data">
                 <div className="skills_titles">
                   <h3 className="skills_name">CSS</h3>
-                  <span className="skills_number">85%</span>
+                  <span className="skills_number">90%</span>
                 </div>
                 <div className="skills_bar">
                   <span className="skills_percentage skills_css"></span>
@@ -73,7 +73,7 @@ const Skill = () => {
               <div className="skills_data">
                 <div className="skills_titles">
                   <h3 className="skills_name">JavaScript</h3>
-                  <span className="skills_number">70%</span>
+                  <span className="skills_number">75%</span>
                 </div>
                 <div className="skills_bar">
                   <span className="skills_percentage skills_js"></span>
@@ -88,6 +88,15 @@ const Skill = () => {
                   <span className="skills_percentage skills_react"></span>
                 </div>
               </div>
+              <div className="skills_data">
+                <div className="skills_titles">
+                  <h3 className="skills_name">Version control system</h3>
+                  <span className="skills_number">95%</span>
+                </div>
+                <div className="skills_bar">
+                  <span className="skills_percentage skills_vsc"></span>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -100,7 +109,7 @@ const Skill = () => {
 
               <div>
                 <h1 className="skills_title">Designer</h1>
-                <span className="skills_subtitle">2 years</span>
+                <span className="skills_subtitle">1 years</span>
               </div>
 
               <i className="bx bx-chevron-down  skills_arrow"></i>
@@ -110,7 +119,7 @@ const Skill = () => {
               <div className="skills_data">
                 <div className="skills_titles">
                   <h3 className="skills_name">Figma</h3>
-                  <span className="skills_number">50%</span>
+                  <span className="skills_number">65%</span>
                 </div>
                 <div className="skills_bar">
                   <span className="skills_percentage skills_figma"></span>

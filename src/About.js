@@ -21,11 +21,11 @@ const About = () => {
                      <span className="about_info-name">Years <br/> experience</span>
                  </div>
                  <div>
-                    <span className="about_info-title">7+</span>
+                    <span className="about_info-title">8+</span>
                     <span className="about_info-name">Completed <br/> project</span>
                  </div>
                  <div>
-                    <span className="about_info-title">1</span>
+                    <span className="about_info-title">2</span>
                     <span className="about_info-name">Companies/NGO`s <br/> worked</span>
                  </div>
              </div>
