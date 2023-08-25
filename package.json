@@ -46,7 +46,9 @@
     "@babel/preset-react": "^7.22.5",
     "@testing-library/react": "^14.0.0",
     "eslint-plugin-react": "^7.33.1",
-    "jsdom": "^22.1.0",
-    "fsevents": "^2.3.3"
+    "jsdom": "^22.1.0"
+  },
+   "engines": {
+    "node": "18.17.1"
   }
 }
