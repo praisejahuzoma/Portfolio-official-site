@@ -4,7 +4,7 @@ const HomePage = () => {
     const [fadeIn, setFadeIn] = useState(false);
   
     useEffect(() => {
-      // Set the fade-in class after a short delay to trigger the animation
+      // Set the fade-in className after a short delay to trigger the animation
       const timeout = setTimeout(() => {
         setFadeIn(true);
       }, 100);
@@ -19,36 +19,36 @@ const HomePage = () => {
          <div className="home_content grid">
              <div className="home_social">
                  <a href="https://www.instagram.com/iampraiseuzoma/?igshid=MzRlODBiNWFlZA%3D%3D" target="_blank" rel="noopener noreferrer" className="home_social-icon">
-                     <i class='bx bxl-instagram' ></i>
+                     <i className='bx bxl-instagram' ></i>
                  </a>
 
                  <a href="https://www.twitter.com/" target="_blank" rel="noopener noreferrer" className="home_social-icon">
-                     <i class='bx bxl-twitter' ></i>
+                     <i className='bx bxl-twitter' ></i>
                  </a>
 
                  <a href="https://github.com/praisejahuzoma" target="_blank" rel="noopener noreferrer" className="home_social-icon">
-                     <i class='bx bxl-github'></i>
+                     <i className='bx bxl-github'></i>
                  </a>
              </div>
 
              <div className="home_img">
               <img src="/image/Home.svg" alt="Home Profile"/>
              </div>
-             <div class="home_data">
-                  <h1 className="home_title fade-in">Hi, <br/>I'm Praisejah</h1>
+             <div className="home_data">
+                  <h1 className="home_title fade-in">Hi, <br/>I am Praisejah</h1>
                   <h3 className="home_subtitle">Web Developer</h3>
                   <p className="home_description">Who focuses on writing clean, elegant and efficient code.</p>
                   <a href="#contact" className="button button--flex">
-                     Contact Me <i class='bx bx-message-rounded-dots button_icon'></i>
+                     Contact Me <i className='bx bx-message-rounded-dots button_icon'></i>
                   </a>
              </div>
          </div>
 
-         <div class="home_scroll">
+         <div className="home_scroll">
              <a href="#about" className="home_scroll-button button--flex">
-                 <i class='bx bx-mouse home_scroll-mouse' ></i>
+                 <i className='bx bx-mouse home_scroll-mouse' ></i>
                  <span className="home_scroll-name">Scroll down</span>
-                 <i class='bx bx-down-arrow-alt home_scroll-arrow' ></i>
+                 <i className='bx bx-down-arrow-alt home_scroll-arrow' ></i>
              </a>
          </div>
          

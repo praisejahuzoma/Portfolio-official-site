@@ -6,23 +6,23 @@ const Contact = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-
-    // Add your email template ID and service ID
+  
+// Add your email template ID and service ID
     const templateId = 'template_69bc9g5';
     const serviceId = 'service_h3wuafz';
 
     // Add your user ID from emailjs.com dashboard
     const userId = 'fDhCZtzaM49ikdHL5';
-
+  
     emailjs.sendForm(serviceId, templateId, e.target, userId)
-      .then((result) => {
+      .then(() => {
         console.log('Email successfully sent!');
         setIsSent(true); // Set the submission status to true
-
-        // Reset the form after submission
+  
+// Reset the form after submission
         e.target.reset();
-
-        // Reset the isSent state after 2 seconds
+  
+// Reset the isSent state after 2 seconds
         setTimeout(() => {
           setIsSent(false);
         }, 2000);
@@ -35,7 +35,7 @@ const Contact = () => {
   return (
     <section className="contact section" id="contact">
       <h2 className="section_title">Contact Me</h2>
-      <span className="section_subtitle">Let's Talk</span>
+      <span className="section_subtitle">Let us Talk</span>
 
       <div className="contact_container container grid">
         <div>

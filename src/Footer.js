@@ -2,43 +2,43 @@ import React from "react"
 const Footer = () =>{
     return(
         // <!-- footer -->
-    <footer class="footer">
-      <div class="footer_bg">
-          <div class="footer_container container grid">
+    <footer className="footer">
+      <div className="footer_bg">
+          <div className="footer_container container grid">
               <div>
-                  <h1 class="footer_title">Praisejah</h1>
-                  <span class="footer_subtitle">Frontend developer </span>                  
+                  <h1 className="footer_title">Praisejah</h1>
+                  <span className="footer_subtitle">Frontend developer </span>                  
               </div>
             {/* footer links to service, portfolio, and contactme section */}
-              <ul class="footer_links">
+              <ul className="footer_links">
                   <li>
-                      <a href="#services" class="footer_link">Services</a>
+                      <a href="#services" className="footer_link">Services</a>
                   </li>
                 <li>
-                    <a href="#portfolio" class="footer_link">Portfolio</a>
+                    <a href="#portfolio" className="footer_link">Portfolio</a>
                 </li>
                 <li>
-                    <a href="#contact" class="footer_link">Contactme</a>
+                    <a href="#contact" className="footer_link">Contactme</a>
                 </li>
               </ul>
               
             {/* socials */}
-              <div class="footer_socials">
-                  <a href="https://www.github.com/praisejahuzoma" target="-blank" class="footer_social">
-                    <i class='bx bxl-github'></i>
+              <div className="footer_socials">
+                  <a href="https://www.github.com/praisejahuzoma" target="-blank" className="footer_social">
+                    <i className='bx bxl-github'></i>
                   </a>
 
-                  <a href="https://www.instagram.com/iampraiseuzoma/?igshid=MzRlODBiNWFlZA%3D%3D" target="-blank" class="footer_social">
-                    <i class='bx bxl-instagram'></i>
+                  <a href="https://www.instagram.com/iampraiseuzoma/?igshid=MzRlODBiNWFlZA%3D%3D" target="-blank" className="footer_social">
+                    <i className='bx bxl-instagram'></i>
                   </a>
 
-                  <a href="https://twitter.com/" target="-blank" class="footer_social">
-                    <i class='bx bxl-twitter'></i>
+                  <a href="https://twitter.com/" target="-blank" className="footer_social">
+                    <i className='bx bxl-twitter'></i>
                   </a>
               </div>
           </div>
 
-          <p class="footer_copy">&#169; Praisejah. All right reserved</p>
+          <p className="footer_copy">&#169; Praisejah. All right reserved</p>
       </div>
     </footer>
     )

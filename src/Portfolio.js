@@ -97,7 +97,7 @@ const Portfolios = () => {
 
             <div className="portfolio_data">
               <h3 className="portfolio_title">Weather App</h3>
-              <p className="portfolio_description">Get your city's weather</p>
+              <p className="portfolio_description">Get your cities weather</p>
               <button onClick={() => window.open("https://api-weather-forecast-app.netlify.app/", "_blank", "noopener noreferrer")} className="button button--flex button--small portfolio_button">
                 Demo
                 <i className='bx bx-right-arrow-alt button-icon'></i>
