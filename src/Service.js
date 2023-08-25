@@ -1,30 +1,47 @@
 import React, { useEffect } from 'react';
 
 const Services = () => {
-// service javascript code
   useEffect(() => {
     const modalViews = document.querySelectorAll('.services_modal');
     const modalBtns = document.querySelectorAll('.services_button');
     const modalCloses = document.querySelectorAll('.services_modal-close');
 
-    let modal = function (modalClick) {
+    const openModal = (modalClick) => {
       modalViews[modalClick].classList.add('active-modal');
+    };
+
+    const closeModal = () => {
+      modalViews.forEach((modalView) => {
+        modalView.classList.remove('active-modal');
+      });
     };
 
     modalBtns.forEach((modalBtn, i) => {
       modalBtn.addEventListener('click', () => {
-        modal(i);
+        openModal(i);
       });
     });
 
     modalCloses.forEach((modalClose) => {
-      modalClose.addEventListener('click', () => {
-        modalViews.forEach((modalView) => {
-          modalView.classList.remove('active-modal');
+      modalClose.addEventListener('click', closeModal);
+    });
+
+    // Clean up the event listeners when the component is unmounted
+    return () => {
+      modalBtns.forEach((modalBtn, i) => {
+        modalBtn.removeEventListener('click', () => {
+          openModal(i);
         });
       });
-    });
+
+      modalCloses.forEach((modalClose) => {
+        modalClose.removeEventListener('click', closeModal);
+      });
+    };
   }, []);
+
+
+
 
   return (
     // <!-- services -->
