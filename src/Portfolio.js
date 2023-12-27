@@ -1,7 +1,7 @@
-import React, { useEffect, useCallback, useRef } from 'react';
+import React, { useEffect, useCallback, useRef } from "react";
 
 const Portfolios = () => {
-// Portfolio javascript
+  // Portfolio javascript
   const slideIndexRef = useRef(1);
 
   const showSlides = useCallback(() => {
@@ -51,14 +51,29 @@ const Portfolios = () => {
         <div className="swiper-wrapper">
           {/* portfolio 1 */}
           <div className="portfolio_content grid mySlides fade">
-            <img src="image/online-store.png" alt="" className="portfolio_img" />
+            <img
+              src="image/online-store.png"
+              alt=""
+              className="portfolio_img"
+            />
 
             <div className="portfolio_data">
               <h3 className="portfolio_title">Online Store</h3>
-              <p className="portfolio_description">Website adaptable to all devices.</p>
-              <button onClick={() => window.open("https://pink-shop.netlify.app/", "_blank", "noopener noreferrer")} className="button button--flex button--small portfolio_button">
+              <p className="portfolio_description">
+                Website adaptable to all devices.
+              </p>
+              <button
+                onClick={() =>
+                  window.open(
+                    "https://pink-shop.netlify.app/",
+                    "_blank",
+                    "noopener noreferrer"
+                  )
+                }
+                className="button button--flex button--small portfolio_button"
+              >
                 Demo
-                <i className='bx bx-right-arrow-alt button-icon'></i>
+                <i className="bx bx-right-arrow-alt button-icon"></i>
               </button>
             </div>
           </div>
@@ -69,10 +84,21 @@ const Portfolios = () => {
 
             <div className="portfolio_data">
               <h3 className="portfolio_title">Ui-Clock</h3>
-              <p className="portfolio_description">Responsive Dark and Light Mode Clock</p>
-              <button onClick={() => window.open("https://uiclock.netlify.app/", "_blank", "noopener noreferrer")} className="button button--flex button--small portfolio_button">
+              <p className="portfolio_description">
+                Responsive Dark and Light Mode Clock
+              </p>
+              <button
+                onClick={() =>
+                  window.open(
+                    "https://uiclock.netlify.app/",
+                    "_blank",
+                    "noopener noreferrer"
+                  )
+                }
+                className="button button--flex button--small portfolio_button"
+              >
                 Demo
-                <i className='bx bx-right-arrow-alt button-icon'></i>
+                <i className="bx bx-right-arrow-alt button-icon"></i>
               </button>
             </div>
           </div>
@@ -83,10 +109,21 @@ const Portfolios = () => {
 
             <div className="portfolio_data">
               <h3 className="portfolio_title">Market List Calculator</h3>
-              <p className="portfolio_description">Website that calculates your market list price</p>
-              <button onClick={() => window.open("https://market-calculator.netlify.app/", "_blank", "noopener noreferrer")} className="button button--flex button--small portfolio_button">
+              <p className="portfolio_description">
+                Website that calculates your market list price
+              </p>
+              <button
+                onClick={() =>
+                  window.open(
+                    "https://market-calculator.netlify.app/",
+                    "_blank",
+                    "noopener noreferrer"
+                  )
+                }
+                className="button button--flex button--small portfolio_button"
+              >
                 Demo
-                <i className='bx bx-right-arrow-alt button-icon'></i>
+                <i className="bx bx-right-arrow-alt button-icon"></i>
               </button>
             </div>
           </div>
@@ -98,9 +135,18 @@ const Portfolios = () => {
             <div className="portfolio_data">
               <h3 className="portfolio_title">Weather App</h3>
               <p className="portfolio_description">Get your cities weather</p>
-              <button onClick={() => window.open("https://api-weather-forecast-app.netlify.app/", "_blank", "noopener noreferrer")} className="button button--flex button--small portfolio_button">
+              <button
+                onClick={() =>
+                  window.open(
+                    "https://api-weather-forecast-app.netlify.app/",
+                    "_blank",
+                    "noopener noreferrer"
+                  )
+                }
+                className="button button--flex button--small portfolio_button"
+              >
                 Demo
-                <i className='bx bx-right-arrow-alt button-icon'></i>
+                <i className="bx bx-right-arrow-alt button-icon"></i>
               </button>
             </div>
           </div>
@@ -112,15 +158,28 @@ const Portfolios = () => {
             <div className="portfolio_data">
               <h3 className="portfolio_title">Music App</h3>
               <p className="portfolio_description">Music App</p>
-              <button onClick={() => window.open("https://mymusic-app.netlify.app/", "_blank", "noopener noreferrer")} className="button button--flex button--small portfolio_button">
+              <button
+                onClick={() =>
+                  window.open(
+                    "https://mymusic-app.netlify.app/",
+                    "_blank",
+                    "noopener noreferrer"
+                  )
+                }
+                className="button button--flex button--small portfolio_button"
+              >
                 Demo
-                <i className='bx bx-right-arrow-alt button-icon'></i>
+                <i className="bx bx-right-arrow-alt button-icon"></i>
               </button>
             </div>
           </div>
-         {/* prev and next arrows */}
-          <span className="prev" onClick={() => plusSlides(-1)}>&#10094;</span>
-          <span  className="next" onClick={() => plusSlides(1)}>&#10095;</span>
+          {/* prev and next arrows */}
+          <span className="prev" onClick={() => plusSlides(-1)}>
+            &#10094;
+          </span>
+          <span className="next" onClick={() => plusSlides(1)}>
+            &#10095;
+          </span>
         </div>
 
         {/* prev and next dots */}
@@ -134,5 +193,5 @@ const Portfolios = () => {
       </div>
     </section>
   );
-}
+};
 export default Portfolios;
